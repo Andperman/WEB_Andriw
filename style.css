@@ -1,0 +1,256 @@
+:root {
+    --lavander: #F5F5DC;
+    
+    
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+    }
+    
+    header {
+        background-color: #F5F5DC; /* Beige para la barra de navegación */
+        padding: 15px;
+    }
+    
+    .container {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        position: relative;
+    }
+    
+    .menu-icon {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        justify-content: center;
+        transition: all 0.3s ease;
+    }
+    
+    .bar {
+        width: 25px;
+        height: 3px;
+        background-color: #808080; /* Gris para las líneas del menú */
+        margin: 4px 0;
+        transition: all 0.3s ease;
+    }
+    
+    /* Cambia el color de las líneas del menú al pasar el cursor */
+    .menu-icon:hover .bar {
+        background-color: #555;
+    }
+    
+    /* Ocultar el checkbox */
+    #menu-toggle {
+        display: none;
+    }
+    
+    /* Estilo del menú desplegable */
+    nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: #1E90FF; /* Color azul para el cuadro desplegable */
+        padding: 30px 50px; /* Tamaño grande para el menú */
+        border-radius: 8px; /* Borde redondeado */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    
+    /* Mostrar el menú desplegable cuando el checkbox está marcado */
+    #menu-toggle:checked + .menu-icon + nav {
+        display: block;
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    nav ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centrar los elementos del menú */
+    }
+    
+    nav ul li {
+        margin: 15px 0; /* Distancia entre las palabras */
+    }
+    
+    nav ul li a {
+        color: white; /* Letra de color blanco */
+        text-decoration: none;
+        font-size: 14px; /* Letra más pequeña */
+        text-align: center; /* Centrar el texto */
+        position: relative; /* Añadido para que ::after funcione correctamente */
+    }
+    
+    /* Subrayado animado para los enlaces */
+    nav ul li a::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 2px;
+        background-color: #ff6347; /* Subrayado de color tomate */
+        left: 0;
+        bottom: -5px; /* Posicionar el subrayado debajo del texto */
+        transition: width 0.3s ease;
+    }
+    
+    nav ul li a:hover::after {
+        width: 100%; /* Subrayado completo al hacer hover */
+    }
+    
+    /* Media queries para pantallas pequeñas */
+    @media (max-width: 768px) {
+        .menu-icon {
+            display: flex;
+        }
+    
+        nav {
+            display: none;
+            position: absolute;
+            top: 60px;
+            right: 10px;
+            background-color: #1E90FF; /* Azul */
+            padding: 30px 50px;
+            border-radius: 8px;
+        }
+    
+        #menu {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        #menu-toggle:checked + .menu-icon + nav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    
+    
+    /* TERMINA ESTILO NAV*/
+    /*Main ,index*/
+    main{
+    background-image: url("./IMG/pexels-gui-basto-517975-1249586.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: auto;
+    
+    }
+    
+    
+    /* Texto index */
+    
+    .primer-h1 {
+      font-family: "Monoscape";
+      color: white;
+      font-size: 25px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      height: 280px;
+      font-weight: 300;
+      /* Grosor */
+    
+    
+    }
+    
+    .segundo-h1 {
+      font-family: monospace;
+      color: white;
+      font-size: 35px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      height: 35px;
+      font-weight: 300;
+    
+    
+    
+    }
+    
+    .tercer-h1 {
+      font-family: "Segoe IU", sans-serif;
+      color: white;
+      font-size: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      height: 30px;
+      font-weight: 300;
+    
+    }
+    
+    
+    body{
+        margin:0;
+        overflow-x:hidden;
+        }
+        
+        .footer{
+        background:#000;
+        padding: 15px 0px ;
+        font-family: 'Play', sans-serif;
+        text-align:center;
+        
+        }
+        
+        .footer .row{
+        width:100%;
+        margin:1% 0%;
+        padding:0.6% 0%;
+        color:gray;
+        font-size:0.8em;
+        }
+        
+        .footer .row a{
+        text-decoration:none;
+        color:gray;
+        transition:0.5s;
+        }
+        
+        .footer .row a:hover{
+        color:#fff;
+        }
+        
+        .footer .row ul{
+        width:100%;
+        }
+        
+        .footer .row ul li{
+        display:inline-block;
+        margin:0px 30px;
+        }
+        
+        .footer .row a i{
+        font-size:2em;
+        margin:2% 1%;
+        }
+        
+        @media (max-width:720px){
+        .footer{
+        text-align:left;
+        padding:5%;
+        }
+        .footer .row ul li{
+        display:block;
+        margin:10px 0px;
+        text-align:left;
+        }
+        .footer .row a i{
+        margin:0% 3%;
+        }
+        }
