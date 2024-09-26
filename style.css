@@ -1,9 +1,3 @@
-:root {
-    --lavander: #F5F5DC;
-
-
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -15,19 +9,16 @@
 html,
 body {
     height: 100%;
-    /* Asegura que el html y body ocupen el 100% de la altura */
+
 }
 
 
 header {
-    background-color: #F5F5DC;
-    /* Beige para la barra de navegación */
+    background-color: #ed9784;
     padding: 15px;
     position: fixed;
     top: 0;
-    /* Alineado a la parte superior de la ventana */
     width: 100%;
-    /* Asegura que el header ocupe todo el ancho */
     z-index: 1000;
 
 }
@@ -51,12 +42,11 @@ header {
     width: 25px;
     height: 3px;
     background-color: #808080;
-    /* Gris para las líneas del menú */
     margin: 4px 0;
     transition: all 0.3s ease;
 }
 
-/* Cambia el color de las líneas del menú al pasar el cursor */
+
 .menu-icon:hover .bar {
     background-color: #555;
 }
@@ -66,22 +56,16 @@ header {
     display: none;
 }
 
-/* Estilo del menú desplegable */
+
 nav {
     display: none;
     /*Solo se ve cuando pulsa*/
     position: absolute;
     top: 100%;
     right: 0;
-    background-color: #1E90FF;
-    /* Color azul para el cuadro desplegable */
+    background-color: #0b5d94;
     padding: 30px 50px;
-    /* Tamaño grande para el menú */
     border-radius: 8px;
-    /* Borde redondeado */
-
-
-
 }
 
 /* Menú oculto, cuando se esté marcando , boton visibles y sale nav*/
@@ -97,7 +81,7 @@ nav ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* Centrar los elementos del menú */
+
 }
 
 nav ul li {
@@ -107,14 +91,11 @@ nav ul li {
 
 nav ul li a {
     color: white;
-    /* Letra de color blanco */
     text-decoration: none;
     font-size: 14px;
-    /* Letra más pequeña */
     text-align: center;
-    /* Centrar el texto */
     position: relative;
-    /* aparezca el texto justo debajo*/
+
 }
 
 /* Subrayado animado para los enlaces */
@@ -123,12 +104,10 @@ nav ul li a::after {
     position: absolute;
     width: 0;
     height: 2px;
-    background-color: #ff6347;
-    /* Subrayado de color tomate */
+    background-color: #bc7731;
     left: 0;
     bottom: -5px;
-    /* Posicionar el subrayado debajo del texto */
-
+    /* Subrayado debajo del texto */
 }
 
 nav ul li a:hover::after {
@@ -141,86 +120,64 @@ nav ul li a:hover::after {
 .Foto {
     height: 100vh;
     display: flex;
-    /* Habilita flexbox para alinear el contenido */
     flex-direction: column;
-    justify-content: center;
-    /* Centra el contenido horizontalmente */
+    justify-content: flex-start;
     align-items: center;
     /* Centra el contenido verticalmente */
-    background-image: url("../WEB_Andriw/img/pexels-gui-basto-517975-1249586.jpg");
-    /* Ruta de la imagen */
+    background-image: url("./img/header-background1.jpg");
     background-size: cover;
-    /* Hace que la imagen cubra todo el área */
     background-position: center;
-    /* Centra la imagen */
     background-repeat: no-repeat;
-    /* Evita que la imagen se repita */
-}
 
+}
 
 /* Texto index */
 
 .primer-h1 {
-    font-size: 25px;
-    /* Tamaño de letra 25px */
+    font-size: 50px;
     font-family: 'Play', sans-serif;
-    /* Fuente */
     color: white;
-    /* Color blanco */
-    margin: 10px 0;
-    /* Márgenes verticales */
+    margin: 15px 0;
+    margin-top: 250px;
+
 }
 
 .segundo-h1 {
-    font-size: 35px;
-    /* Tamaño de letra 35px */
+    font-size: 90px;
     font-family: 'Play', sans-serif;
-    /* Fuente */
     color: white;
-    /* Color blanco */
-    margin: 10px 0;
-    /* Márgenes verticales */
+    margin: 5px 0;
 }
 
 .tercer-h1 {
-    font-size: 15px;
-    /* Tamaño de letra 15px */
+    font-size: 30px;
     font-family: 'Play', sans-serif;
-    /* Fuente */
     color: white;
-    /* Color blanco */
-    margin: 10px 0;
-    /* Márgenes verticales */
-}
+    margin: 15px 0;
 
+}
 
 
 
 /* Biografía */
 
 #Biografía {
-    background-color: #1E90FF;
-    /* Fondo azul */
-    color: #D3D3D3;
-    /* Texto gris */
-    font-family: 'Fredoka One', sans-serif;
-    /* Fuente atractiva */
-    padding: 40px 20px;
+    background-color: #3e87d0;
+    color: #f7f3ee;
+    font-family: 'Play', sans-serif;
+    padding: 90px 20px;
     /* Espaciado alrededor de la sección */
     text-align: center;
     /* Centrar el texto del h2 */
-    height: 100vh;
+    height: 1100px;
 }
 
 #Biografía h2 {
-    font-size: 2em;
-    /* Tamaño del título */
+    font-size: 40px;
     margin-bottom: 20px;
-    /* Espacio debajo del título */
     color: #fff;
-    /* Color blanco para el título */
     text-align: center;
-    /* Centrar el título */
+
 }
 
 /* Estilo del contenedor de la imagen y el texto */
@@ -230,129 +187,75 @@ nav ul li a:hover::after {
     flex-direction: column;
     /* Colocar elementos en columna */
     align-items: center;
-    /* Centra horizontalmente el contenido */
     gap: 20px;
-    /* Espacio entre imagen y texto */
     background-color: #1E90FF;
-    /* Fondo azul para la sección */
     padding: 20px;
-    /* Espacio alrededor del contenido */
+
 }
 
 /* Estilo del contenedor de la imagen */
 figure {
     margin: 0;
-    /* Sin márgenes */
     text-align: center;
-    /* Centra la imagen y el caption */
+
 }
 
 /* Estilo de la imagen */
 .mi-foto {
-    width: 100%;
-    /* La imagen ocupa el ancho máximo disponible */
-    max-width: 300px;
+    width: 50%;
+    max-width: 150px;
     /* Limitar el ancho máximo de la imagen */
     height: auto;
     /* Mantiene la proporción de la imagen */
-    border-radius: 50%;
-    /* Imagen redonda */
     border: 4px solid #fff;
-    /* Borde blanco */
+
 }
 
 /* Estilo del caption de la imagen */
 figcaption {
-    font-size: 1.5em;
-    /* Tamaño de la letra del caption */
+    font-size: 15px;
     color: #fff;
-    /* Texto blanco */
-    margin-top: 10px;
-    /* Espaciado superior */
+    margin-top: 0;
 }
 
-/* Estilo del contenedor del texto */
-.texto-seccion {
-    max-width: 80%;
-    /* El texto ocupa el 80% del ancho */
-    font-size: 1.1em;
-    /* Tamaño del texto */
-    line-height: 1.6;
-    /* Espaciado entre líneas */
-    text-align: center;
-    /* Centramos el texto */
-}
+
 
 /* Estilo para el párrafo */
 .parrafo {
-    margin: 0;
-    /* Eliminamos márgenes en los párrafos */
+    margin: 20px auto 0;
+    /* Añade un margen superior de 20px y centra horizontalmente */
     color: #D3D3D3;
-    /* Color gris para el texto */
+    max-width: 60%;
+    font-size: 15px;
+    line-height: 2;
+    /* Espaciado entre líneas */
+    text-align: justify;
 }
-
-
-
-/* Adaptación para pantallas pequeñas biografía*/
-@media (max-width: 768px) {
-
-    /* Ajustes para el título */
-    #Biografía h2 {
-        font-size: 1.8em;
-        /* Tamaño del título más pequeño pero no tan reducido */
-    }
-
-    /* Ajustes para la imagen */
-    .mi-foto {
-        max-width: 90%;
-        /* Aumentar el ancho máximo en móvil para que ocupe más espacio */
-    }
-
-    /* Ajustes para el texto */
-    .texto-seccion {
-        font-size: 1.1em;
-        /* Tamaño de texto más accesible */
-    }
-
-    /* Espaciado adicional */
-    .contenido-biografia {
-        padding: 15px;
-        /* Mantener un padding cómodo en móvil */
-        gap: 20px;
-        /* Espacio entre elementos un poco más amplio */
-    }
-}
-
 
 
 
 /* PORTFOLIO*/
-/* Estilo general para la sección del portafolio */
-/* Estilo general para la sección del portafolio */
 
 #Portfolio {
-    padding: 40px 20px;
+    padding: 60px 150px;
     /* Espaciado alrededor del portafolio */
-    background-color: #f4f4f4;
-    /* Fondo claro */
+    background-color: #4a867c;
     height: 1300px;
     ;
-
 }
 
 .title-portfolio {
     text-align: center;
-    /* Centra el título */
-    font-size: 2em;
-    /* Tamaño del texto */
+    margin-top: 40px;
     margin-bottom: 30px;
-    /* Espacio debajo del título */
+    font-family: 'Play', sans-serif;
+    font-size: 40px;
+    color: white;
 }
 
 /* Contenedor del portafolio */
 article {
     display: flex;
-    /* Usar flexbox para la disposición */
     flex-wrap: wrap;
     /* Permitir que las cajas se envuelvan */
     justify-content: space-between;
@@ -361,26 +264,21 @@ article {
 
 /* Estilo de cada caja */
 .caja {
-    background-color: #fff;
-    /* Fondo blanco */
+    background-color: #f5f6d9;
     border: 2px solid #fff;
-    /* Borde blanco */
     border-radius: 10px;
-    /* Bordes redondeados */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    /* Sombra suave */
     margin: 10px;
-    /* Margen entre cajas */
     padding: 20px;
-    /* Espaciado interno */
     text-align: center;
-    /* Centra el texto */
     width: calc(33.33% - 20px);
-    /* Ancho de cada caja */
-    transition: transform 0.3s;
-    /* Transición para hover */
     box-sizing: border-box;
     /* Asegura que el padding no afecte el tamaño total */
+}
+
+.caja>h2 {
+    font-family: 'Play', sans-serif;
+    font-size: 15px;
+    margin-bottom: 10px;
 }
 
 /* Estilo de la imagen */
@@ -398,175 +296,120 @@ article {
     display: inline-block;
     /* Para que el botón se comporte como un bloque */
     margin-top: 15px;
-    /* Espacio encima del botón */
     padding: 10px 15px;
-    /* Espaciado interno del botón */
-    background-color: #1E90FF;
-    /* Color azul */
+    background-color: #daa77a;
     color: #fff;
-    /* Texto blanco */
     text-decoration: none;
-    /* Sin subrayado */
     border-radius: 5px;
-    /* Bordes redondeados */
     transition: background-color 0.3s;
     /* Transición en hover */
 }
 
-/* Hover effect para el botón */
+
 .boton:hover {
-    background-color: #00BFFF;
+    background-color: #ebf0a4;
     /* Color más claro al pasar el mouse */
 }
 
-/* Efecto hover en las cajas */
+
 .caja:hover {
     transform: scale(1.05);
     /* Aumenta el tamaño al pasar el mouse */
 }
 
-/* Estilo responsivo */
-@media (max-width: 768px) {
-    .caja {
-        width: calc(50% - 20px);
-        /* Dos cajas por fila en pantallas medianas */
-    }
-}
 
-@media (max-width: 480px) {
-    .caja {
-        width: 100%;
-        /* Una caja por fila en pantallas pequeñas */
-    }
-}
+
+
+
 
 
 /* Estilo de la sección del formulario de contacto */
 
 #contacto {
-    display: flex; /* Usamos flexbox para centrar el contenido */
-    justify-content: center; /* Centrar horizontalmente */
-    align-items: center; /* Centrar verticalmente */
-    height: 1000px; /* Mínimo alto de la vista */
-    background-color: #f0f0f0; /* Color de fondo suave */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
+    /* Mínimo alto de la vista */
+    background-color: #619fcc;
 
 }
 
 
-
-    
-
 /* Estilo del contenedor del formulario */
 .contact-form {
-    background-color: #ffffff; /* Fondo blanco para el formulario */
-    border: 2px solid #1E90FF; /* Borde azul alrededor del formulario */
-    border-radius: 10px; /* Bordes redondeados */
-    padding: 20px; /* Espacio interior */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    width: 90%; /* Ancho responsive */
-    max-width: 400px; /* Ancho máximo */
+    background-color: #f4b0a0;
+    border: 2px solid #d3e9ff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%;
+
+
 }
 
 /* Título del formulario */
 #contacto h2 {
-    text-align: center; /* Centrar el texto */
-    color: #1E90FF; /* Color azul para el título */
-    margin-bottom: 20px; /* Espacio debajo del título */
-    font-size: 24px; /* Tamaño del texto */
-    font-weight: bold; /* Negrita */
+    text-align: center;
+    color: #1E90FF;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+
 }
 
 /* Estilos de los grupos de formulario */
 .form-group {
-    margin-bottom: 15px; /* Espacio entre los grupos */
+    margin-bottom: 15px;
+    /* Espacio entre los grupos */
 }
 
 /* Estilos de las etiquetas */
 .form-group label {
-    display: block; /* Hacer las etiquetas de bloque */
-    margin-bottom: 5px; /* Espacio debajo de las etiquetas */
-    font-weight: bold; /* Negrita */
+    display: block;
+    margin-bottom: 5px;
+    /* Espacio debajo de las etiquetas */
+    font-weight: bold;
+
 }
 
 /* Estilos de los campos de entrada */
 .form-group input,
 .form-group select,
 .form-group textarea {
-    width: 100%; /* Ancho completo */
-    padding: 10px; /* Espacio interior */
-    border-radius: 5px; /* Bordes redondeados */
-    border: 1px solid #ccc; /* Borde gris claro */
-    box-sizing: border-box; /* Incluir padding y border en el ancho total */
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    /* Incluir padding y border en el ancho total */
 }
 
 /* Estilos del botón de enviar */
 button {
-    background-color: #1E90FF; /* Color de fondo del botón */
-    color: white; /* Color del texto */
-    padding: 10px; /* Espacio interior */
-    border: none; /* Sin borde */
-    border-radius: 5px; /* Bordes redondeados */
-    cursor: pointer; /* Cambiar cursor al pasar */
-    width: 100%; /* Ancho completo */
-
-
+    background-color: #5eb6f0;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
 }
 
-
-@media (max-width: 600px) {
-    .contact-form {
-        padding: 15px; /* Reduce el padding en móvil */
-        width: 95%; /* Ancho ligeramente mayor para móviles */
-        max-width: 100%; /* Permitir que ocupe todo el ancho disponible */
-    }
-
-    .contact-form h2 {
-        font-size: 20px; /* Tamaño del texto más pequeño */
-    }
-
-    .form-group label {
-        font-size: 14px; /* Tamaño de fuente más pequeño para etiquetas */
-    }
-
-    .form-group input,
-    .form-group select,
-    .form-group textarea {
-        padding: 8px; /* Espacio interior más pequeño */
-        font-size: 14px; /* Tamaño de fuente más pequeño */
-    }
-
-    button {
-        padding: 8px; /* Espacio interior más pequeño para el botón */
-        font-size: 14px; /* Tamaño de fuente más pequeño para el botón */
-    }
-}
 
 /* FOOTER*/
 
 footer {
-
-
-    background-color: rgb(254, 245, 231);
-    /* Fondo claro */
+    background-color: #bfb1a8;
     width: 100%;
-    /* Ancho completo */
-    padding: 20px 0;
-    /* Espaciado interno */
+    padding: 10px 0;
     margin: 0;
-    /* Sin margen */
     text-align: center;
-    /* Centrar el texto */
     position: fixed;
-    /* Fijo en la parte inferior */
     bottom: 0;
     /* Mantener en la parte inferior */
     left: 0;
     /* Alinear a la izquierda */
     z-index: 1000;
     /* Asegura que esté por encima de otros elementos */
-
-
-
 }
 
 .footer .row {
@@ -601,19 +444,68 @@ footer {
     margin: 2% 1%;
 }
 
-@media (max-width:720px) {
-    .footer {
-        text-align: left;
-        padding: 5%;
-    }
 
-    .footer .row ul li {
-        display: block;
-        margin: 10px 0px;
-        text-align: left;
+@media (max-width: 768px) {
+    .primer-h1 {
+        font-size: 40px;
+        margin-top: 150px; /* Reduce el margen superior */
     }
+    .segundo-h1 {
+        font-size: 50px;
+    }
+    .tercer-h1 {
+        font-size: 25px;
+    }
+  
+  /* Adaptación  biografía*/
+    /* Ajustes para el título */
+    #Biografía h2 {
+        font-size: 16px;
+    }
+    /* Ajustes para la imagen */
+    .mi-foto {
+        max-width: 90%;
+        /* Aumentar el ancho */
+    }
+    /* Ajustes para el texto */
+    .texto-seccion {
+        font-size: 12px;
+      
+    }
+  
+  /* Adaptación portfolio*/
+  
+    .caja {
+        width: 100%;
+        /* Una caja por fila en pantallas pequeñas */
+    }
+  
+  /* Adaptación contacto */
+    .contact-form {
+        padding: 15px;
+        width: 95%;
+        /* Ancho mayor  */
+        max-width: 100%;
+        /* ocupe todo el ancho disponible */
+    }
+  
+  
+  
+  /* Adaptación footer*/
+  .footer {
+    text-align: left;
+    padding: 5%;
+}
 
-    .footer .row a i {
-        margin: 0% 3%;
-    }
+.footer .row ul li {
+    display: block;
+    margin: 10px 0px;
+    text-align: left;
+}
+
+.footer .row a i {
+    margin: 0% 3%;
+}
+
+
 }
