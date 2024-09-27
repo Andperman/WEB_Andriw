@@ -118,7 +118,7 @@ nav ul li a:hover::after {
 
 /*Main ,index*/
 .Foto {
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -177,19 +177,6 @@ nav ul li a:hover::after {
     margin-bottom: 20px;
     color: #fff;
     text-align: center;
-
-}
-
-/* Estilo del contenedor de la imagen y el texto */
-.contenido-biografia {
-    display: flex;
-    /* Usamos Flexbox para alinear imagen y texto */
-    flex-direction: column;
-    /* Colocar elementos en columna */
-    align-items: center;
-    gap: 20px;
-    background-color: #1E90FF;
-    padding: 20px;
 
 }
 
