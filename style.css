@@ -419,26 +419,21 @@ footer {
     color: gray;
     font-size: 0.8em;
 }
-
 .footer .row a {
     text-decoration: none;
     color: gray;
     transition: 0.5s;
 }
-
 .footer .row a:hover {
     color: #fff;
 }
-
 .footer .row ul {
     width: 100%;
 }
-
 .footer .row ul li {
     display: inline-block;
     margin: 0px 30px;
 }
-
 .footer .row a i {
     font-size: 2em;
     margin: 2% 1%;
@@ -469,16 +464,27 @@ footer {
     }
     /* Ajustes para el texto */
     .texto-seccion {
-        font-size: 12px;
-      
+        font-size: 12px; 
     }
   
   /* Adaptación portfolio*/
   
-    .caja {
-        width: 100%;
-        /* Una caja por fila en pantallas pequeñas */
+  @media (max-width: 768px) {
+    #Portfolio {
+        padding: 40px 20px; 
+        height: 1400px; /* Eliminar la altura fija */
     }
+    .title-portfolio {
+        font-size: 30px; 
+    }
+    article {
+        justify-content: center;
+    }
+    .caja {
+        width: calc(50% - 20px); /* Las cajas ahora ocuparán la mitad del ancho */
+    }
+}
+
   
   /* Adaptación contacto */
     .contact-form {
@@ -490,22 +496,19 @@ footer {
     }
   
   
-  
   /* Adaptación footer*/
   .footer {
-    text-align: left;
-    padding: 5%;
+    text-align: center; 
+    height: 110px;
+  
 }
 
 .footer .row ul li {
     display: block;
-    margin: 10px 0px;
-    text-align: left;
+    margin: 3px 0px;
+    text-align: center;
 }
 
-.footer .row a i {
-    margin: 0% 3%;
-}
 
 
 }
