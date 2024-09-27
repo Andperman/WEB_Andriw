@@ -419,6 +419,7 @@ footer {
     color: gray;
     font-size: 0.8em;
 }
+
 .footer .row a {
     text-decoration: none;
     color: gray;
@@ -454,6 +455,10 @@ footer {
   
   /* Adaptación  biografía*/
     /* Ajustes para el título */
+
+    #Biografía {
+        height: 1400px;
+    }
     #Biografía h2 {
         font-size: 16px;
     }
