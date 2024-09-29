@@ -6,11 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Andrea Pérez Manzaneque</title>
     <link href="../style.css" rel="stylesheet">
-    <script src="../script.js"></script> 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap" rel="stylesheet">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
 </head>
@@ -37,37 +35,58 @@
         </div>
     </header>
     <main>
-        <section id="contacto">
-        
-            <form class="contact-form" onsubmit="return mostrarMensaje();">
-            <h2>Formulario de Contacto</h2>       
-             <div class="form-group" >
+        <section id="contacto" >
+
+            <form class="contact-form">
+                <h2>Formulario de Contacto</h2>
+                <div class="form-group">
                     <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" required>
+                    <input type="text" id="name" name="name" placeholder="Introduce nombre..." 
+                        required>
                 </div>
+
                 <div class="form-group">
                     <label for="apellido">Apellido:</label>
-                    <input type="text" id="apellido" name="apellido" required>
+                    <input type="text" id="apellido" name="apellido" placeholder="Introduce apellidos..." 
+                         required>
                 </div>
+
                 <div class="form-group">
-                    <label for="select">Selecciona</label>
-                    <select id="select" name="select" required>
+                    <label for="select">¿Eres particular o empresa?</label>
+                    <select id="select" name="select" >
+                        <option value="">Selecciona...</option>
                         <option value="particular">Particular</option>
                         <option value="empresa">Empresa</option>
                     </select>
                 </div>
+
                 <div class="form-group">
                     <label for="email">Correo Electrónico:</label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" id="email" name="email" placeholder="Introduce email..." required>
                 </div>
+
+
+                <div class="form-group">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="tlf" name="tlf" pattern="[0-9]{9}" placeholder="Introduce teléfono..."
+                        required>
+                </div>
+
+                <!-- Incluye los saltos de línea wrap=hard aunque el usuario no los ponga  -->
                 <div class="form-group">
                     <label for="comments">Motivo de Contacto:</label>
-                    <textarea id="comments" name="comments" rows="5" required></textarea>
+                    <textarea id="comments" name="comments" rows="5" cols="30" wrap="hard" required>
+                    </textarea>
                 </div>
-                <button type="submit">Enviar</button>
+
+                    <button type="submit" value="Enviar">Enviar</button>
+
             </form>
+
+            
+
         </section>
-        
+
     </main>
 
     <footer>
@@ -90,14 +109,8 @@
                 </ul>
             </div>
     </footer>
+
+    <script src="../script.js"></script>
 </body>
 
 </html>
-
-
-
-
-
-
-
-
